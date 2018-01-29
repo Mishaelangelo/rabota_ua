@@ -1,0 +1,511 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	overflow-x: hidden
+	opacity: 1
+	#my-page
+		max-width: 100%
+		height: auto
+
+h1
+	font-family: 'Roboto', sans-serif
+	font-weight: 300
+	position: relative
+	font-size: 45px
+	text-align: center
+
+p
+	font-family: 'Roboto', sans-serif
+	font-weight: 300
+
+.img-responsive
+	max-width: 100%
+	height: auto
+
+.top-line
+	margin-top: 20px
+	margin-bottom: 20px
+
+header 
+	.logo img
+		float: right
+
+header 
+	.phone-number
+		color: #c24d4a
+		font-size: 20px
+
+header 
+	.big-picture 
+		background: url("../img/palms.png") 
+		width: 100%
+		min-height: auto
+		background-size: cover
+		padding-top: 30px
+		padding-bottom: 100px
+
+		p
+			text-align: center
+			font-size: 27px
+		span
+			font-size: 45px
+		button
+			width: 300px
+			height: 45px
+			position: relative
+			left: 40%
+			border: none
+			background-color: white
+			font-size: 20px
+			color: $accent
+
+.middle-box 
+	.top-content 
+		p
+			margin-top: 62px
+			font-size: 20px
+			text-align: center
+			color: $blue
+
+	.low-content 
+		p
+			text-align: center
+			font-size: 14px
+			padding-bottom: 80px
+
+.content-flex
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-bottom: 0
+
+	.box1 
+		padding-bottom: 40px
+
+		img
+			display: block
+			position: relative
+			left: 10%
+		p
+			font-size: 15px
+			float: left
+			color: $blue
+			margin-bottom: 5px
+
+		.bottom-title
+			display: block
+			font-size: 12px
+
+	.box2 
+		padding-bottom: 40px
+
+		img
+			display: block
+			position: relative
+			left: 10%
+
+		p
+			font-size: 15px
+			float: left
+			color: $blue
+			margin-bottom: 5px
+
+		.bottom-title
+			display: block
+			font-size: 12px
+
+	.box3 
+		img
+			display: block
+			position: relative
+			left: 10%
+
+		p
+			font-size: 15px
+			float: left
+			color: $blue
+			margin-bottom: 5px
+
+		.bottom-title
+			display: block
+			font-size: 12px	
+
+		.content-flex-bottom
+			position: absolute
+			left: 4%
+
+.content-flex-bottom 
+	img
+		margin-top: 8%
+		width: 120px
+		height: 120px
+
+	.content
+		position: relative
+		left: 28%
+		bottom: 100px
+
+		.top-content
+			font-size: 22px	
+
+		.bottom-content
+			font-size: 16px	
+			color: $blue
+
+.end-box
+	margin-top: 10px
+	background-color: $grey
+	height: auto
+
+	p
+		margin-top: 60px
+		text-align: center
+		font-size: 19px	
+
+	.btn-center
+		position: relative
+		left: 35%
+		width: 230px
+		height: 43px
+		background-color: $dark-grey 
+		margin-bottom: 40px
+		border: none
+		border-radius: 2px
+		color: white
+
+.resume-flex
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-top: 60px
+
+	.resume-basic
+		margin-bottom: 40px
+
+		.top
+			border-top-right-radius: 5px
+			border-top-left-radius: 5px
+			width: 230px
+			height: 160px
+			background-color: $red
+
+			.title
+				text-align: center
+				padding-top: 20px
+				color: white
+
+			p
+				text-align: left
+				margin-left: 20px
+				margin-right: 20px
+				font-size: 10px
+				margin-top: 15px
+				color: white
+				float: left
+
+		.bottom 
+			border-bottom-right-radius: 5px
+			border-bottom-left-radius: 5px
+			background-color: white
+			width: 230px
+			height: 250px
+			
+			.title
+				text-align: center
+				color: $pink
+				padding-top: 22px
+				margin-bottom: 10px
+				font-size: 16px
+			.left
+				margin-left: 20px
+				margin-top: 15px
+				color: $light-grey
+				font-size: 20px
+				float: left
+				
+				span
+					font-size: 12px
+
+			.right
+				margin-right: 20px
+				font-size: 35px
+				float: right
+
+				span
+					font-size: 12px
+
+			.gift
+				margin-top: 20px
+				margin-left: 26px
+				width: 24px
+				height: 28px
+				background-image: url("../img/present-icon.png")
+				float: left
+
+			.gift-content
+				p
+					display: inline-block 
+					font-size: 14px
+					margin: 0
+					padding-top: 16px
+					padding-left: 20px
+					color: $pink
+				span
+					padding-right: 4px
+
+			.btn
+				position: relative
+				top: 30px
+				width: 200px
+				height: 43px
+				background-color: $red
+				border-radius: 2px
+				border: none
+				left: 7%
+				color: white
+
+	.resume-free
+		margin-bottom: 40px
+		.top
+			border-top-right-radius: 5px
+			border-top-left-radius: 5px
+			width: 230px
+			height: 160px
+			background-color: $red
+
+			.title
+
+				text-align: center
+				padding-top: 20px
+				color: white
+
+			p
+				text-align: left
+				margin-left: 20px
+				margin-right: 20px
+				font-size: 10px
+				margin-top: 15px
+				color: white
+				float: left
+
+		.bottom 
+			border-bottom-right-radius: 5px
+			border-bottom-left-radius: 5px
+			background-color: white
+			width: 230px
+			height: 250px
+			.title
+				text-align: center
+				color: $pink
+				padding-top: 22px
+				margin-bottom: 10px
+				font-size: 16px
+			.left
+				margin-left: 20px
+				margin-top: 15px
+				color: $light-grey
+				font-size: 20px
+				float: left
+				
+				span
+					font-size: 12px
+
+			.right
+				margin-right: 20px
+				font-size: 35px
+				float: right
+
+				span
+					font-size: 12px
+
+			.gift
+				margin-top: 20px
+				margin-left: 26px
+				width: 24px
+				height: 28px
+				background-image: url("../img/present-icon.png")
+				float: left
+
+			.gift-content
+				p
+					display: inline-block 
+					font-size: 14px
+					margin: 0
+					padding-top: 16px
+					padding-left: 20px
+					color: $pink
+				span
+					padding-right: 4px
+
+			.btn
+				position: relative
+				top: 30px
+				width: 200px
+				height: 43px
+				background-color: $red
+				border-radius: 2px
+				border: none
+				left: 7%
+				color: white
+
+	.resume-absolute
+		margin-bottom: 40px
+
+		.top
+			border-top-right-radius: 5px
+			border-top-left-radius: 5px
+			width: 230px
+			height: 160px
+			background-color: $red
+
+			.title
+				text-align: center
+				padding-top: 20px
+				color: white
+
+			p
+				text-align: left
+				margin-left: 20px
+				margin-right: 20px
+				font-size: 10px
+				margin-top: 15px
+				color: white
+				float: left
+
+		.bottom 
+			border-bottom-right-radius: 5px
+			border-bottom-left-radius: 5px
+			background-color: white
+			width: 230px
+			height: 250px
+			.title
+				text-align: center
+				color: $pink
+				padding-top: 22px
+				margin-bottom: 10px
+				font-size: 16px
+			.left
+				margin-left: 20px
+				margin-top: 15px
+				color: $light-grey
+				font-size: 20px
+				float: left
+				
+				span
+					font-size: 12px
+
+			.right
+				margin-top: 4px
+				margin-right: 18px
+				font-size: 30px
+				float: right
+
+				span
+					font-size: 12px
+
+			.gift
+				margin-top: 20px
+				margin-left: 26px
+				width: 24px
+				height: 28px
+				background-image: url("../img/present-icon.png")
+				float: left
+
+			.gift-content
+				p
+					display: inline-block 
+					font-size: 14px
+					margin: 0
+					padding-top: 20px
+					padding-left: 20px
+					color: $pink
+				span
+					padding-right: 4px
+
+			.btn
+				position: relative
+				top: 30px
+				width: 200px
+				height: 43px
+				background-color: $red
+				border-radius: 2px
+				border: none
+				left: 7%
+				color: white
+
+footer
+	.footer
+		.top-footer
+			background: url("../img/footer.png") 
+			width: 100%
+			min-height: auto
+			background-size: cover
+			margin-bottom: 10px
+			
+			p
+				font-size: 18px
+				margin: 0
+				padding-top: 80px
+				padding-bottom: 80px
+				text-align: center
+
+		.first-col
+			font-size: 12px
+			display: inline-block 
+			color: $dark-grey
+			padding-left: 15%
+		.second-col
+			font-size: 12px
+			display: inline-block
+			padding-left: 17% 
+		.third-col
+			font-size: 12px
+			display: inline-block
+			padding-left: 7% 
+		img
+			 padding-left: 7% 
+			 
+@import "media" // Всегда в конце
